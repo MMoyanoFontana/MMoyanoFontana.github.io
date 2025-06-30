@@ -79,7 +79,7 @@ const Contact = () => {
             Información de Contacto
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Aca estan mis datos de contacto, estoy abierto a nuevas oportunidades y colaboraciones
+            Mis datos en caso de que quieras contactarme
           </p>
         </div>
 
