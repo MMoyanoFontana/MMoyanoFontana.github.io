@@ -56,7 +56,7 @@ const Contact = () => {
         </svg>
       ),
       title: 'LinkedIn',
-      value: 'linkedin.com/in/maximilianomoyanofontana/',
+      value: 'Maximiliano Moyano Fontana',
       link: 'https://www.linkedin.com/in/maximilianomoyanofontana/'
     },
     {
@@ -66,7 +66,7 @@ const Contact = () => {
         </svg>
       ),
       title: 'GitHub',
-      value: 'github.com/MMoyanoFontana',
+      value: 'MMoyanoFontana',
       link: 'https://github.com/MMoyanoFontana'
     }
   ];

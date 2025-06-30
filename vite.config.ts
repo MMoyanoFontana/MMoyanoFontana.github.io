@@ -8,7 +8,7 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: '/MMoyanoFontana.github.io/',
+  base: './',
 })
 
 
