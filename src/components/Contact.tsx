@@ -4,7 +4,6 @@ import { useState } from 'react';
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
     subject: '',
     message: ''
   });
@@ -22,17 +21,16 @@ const Contact = () => {
     // Create mailto with form data 
     const subject = encodeURIComponent(formData.subject);
     const body = encodeURIComponent(
-      `Nombre: ${formData.name}\nEmail: ${formData.email}\n\nMensaje:\n${formData.message}`
+      `Hola soy ${formData.name}\n${formData.message}`
     );
     const mailtoLink = `mailto:mmoyanofontana@gmail.com?subject=${subject}&body=${body}`;
-    console.log(mailtoLink);
+    console.log(body);
     // open mail client
     window.location.href = mailtoLink;
     
     // Clear form
     setFormData({
       name: '',
-      email: '',
       subject: '',
       message: ''
     });
@@ -128,22 +126,6 @@ const Contact = () => {
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500"
                     placeholder="Tu nombre completo"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-2">
-                    Correo electrónico
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-200 text-gray-900 placeholder-gray-500"
-                    placeholder="tu@email.com"
                   />
                 </div>
 
