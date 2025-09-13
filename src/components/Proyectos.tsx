@@ -1,4 +1,4 @@
-import cnnArchitectureImg from '../assets/cnn_architecture.webp';
+import ChatbotImg from '../assets/chatbot.jpg';
 import eyeDiseasesImg from '../assets/eye_diseases.webp';
 import FbrefScrapyImg from '../assets/fbref_scrapy.webp';
 import PortfolioImg from '../assets/portfolio.webp';
@@ -16,12 +16,12 @@ const Proyectos = () => {
         },
         {
             id: 2,
-            titulo: "CNN para Clasificación de Jeroglíficos Egipcios",
-            descripcion: "Clasificador de jeroglíficos egipcios de 92 categorías diferentes. Incluye preprocesamiento de imágenes y entrenamiento de múltiples arquitecturas CNN.",
-            tecnologias: ["Python", "TensorFlow", "Keras", "NumPy", "PIL", "Matplotlib", "Scikit-learn"],
-            imagen: cnnArchitectureImg,
-            github: "https://github.com/MMoyanoFontana/CNN-Jeroglificos",
-            demo: ""
+              titulo: "Langchain Chatbot",
+              descripcion: "Chatbot con RAG (Retrieval Augmented Generation) y análisis de documentos cargados por el usuario. Permite consultas inteligentes sobre los archivos subidos y respuestas enriquecidas usando modelos de lenguaje avanzados.",
+              tecnologias: ["Python", "Langchain", "LangGraph", "Gradio"],
+              imagen: ChatbotImg,
+              github: "https://github.com/MMoyanoFontana/Langchain-chatbot",
+              demo: ""
         },
         {
             id: 3,
@@ -62,7 +62,7 @@ const Proyectos = () => {
                                 <img 
                                     src={proyecto.imagen} 
                                     alt={proyecto.titulo}
-                                    className="w-full h-48 object-cover object-center"
+                                    className="w-full h-48 object-scale-down"
                                 />
                             </div>
                             
