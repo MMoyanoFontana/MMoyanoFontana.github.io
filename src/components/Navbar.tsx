@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 const navItems = ['Sobre Mi', 'Tecnologías', 'Proyectos', 'Contacto'];
-const navbarHeight = 64; // Adjust based on your navbar height
+const navbarHeight = 64;
 
 const Navbar = () => {
   const [currentSection, setCurrentSection] = useState('Sobre Mi');

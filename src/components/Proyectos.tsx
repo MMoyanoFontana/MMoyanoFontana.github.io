@@ -62,7 +62,7 @@ const Proyectos = () => {
                                 <img 
                                     src={proyecto.imagen} 
                                     alt={proyecto.titulo}
-                                    className="w-full h-48 object-scale-down"
+                                    className="w-full h-48 object-contain object-center"
                                 />
                             </div>
                             
