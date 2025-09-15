@@ -99,8 +99,8 @@ const Stack = () => {
 
     const categories = [
         { id: 'all', name: 'Todas' },
-        { id: 'infra', name: 'Infraestructura y CI/CD' },
         { id: 'backend', name: 'Backend' },
+        { id: 'infra', name: 'Infraestructura y CI/CD' },
         { id: 'ai', name: 'AI y ML' },
         { id: 'data', name: 'Data' },
         { id: 'frontend', name: 'Frontend' }
