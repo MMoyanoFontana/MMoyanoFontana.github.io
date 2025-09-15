@@ -57,7 +57,7 @@ const Stack = () => {
         },
         {
             id: 'ai',
-            category: "AI & ML",
+            category: "AI y ML",
             technologies: [
                 { name: "TensorFlow", icon: tensorFlowIcon },
                 { name: "PyTorch", icon: pytorchIcon },
@@ -99,10 +99,10 @@ const Stack = () => {
 
     const categories = [
         { id: 'all', name: 'Todas' },
+        { id: 'infra', name: 'Infraestructura y CI/CD' },
         { id: 'backend', name: 'Backend' },
         { id: 'ai', name: 'AI y ML' },
         { id: 'data', name: 'Data' },
-        { id: 'infra', name: 'Infraestructura y CI/CD' },
         { id: 'frontend', name: 'Frontend' }
     ];
 
