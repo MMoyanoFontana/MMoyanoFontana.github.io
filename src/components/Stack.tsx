@@ -7,11 +7,14 @@ import TechCard from './TechCard';
     https://www.streamlinehq.com/
 */}
 import awsIcon from '../assets/aws-svgrepo-com.svg';
+import dockerIcon from '../assets/Docker--Streamline-Svg-Logos.svg';
 import djangoIcon from '../assets/django-svgrepo-com.svg';
 import fastApiIcon from '../assets/fastapi-svgrepo-com.svg';
+import githubActionsIcon from '../assets/Github-Actions--Streamline-Svg-Logos.svg';
 import javaIcon from '../assets/java-svgrepo-com.svg';
 import jsIcon from '../assets/js-svgrepo-com.svg';
 import langChainIcon from '../assets/Langchain--Streamline-Simple-Icons.svg';
+import langGraphIcon from '../assets/langgraph-color.svg';
 import matplotlibIcon from '../assets/matplotlib-icons8.svg';
 import numpyIcon from '../assets/numpy-svgrepo-com.svg';
 import pandasIcon from '../assets/pandas-icons8.svg';
@@ -26,7 +29,7 @@ import seabornIcon from '../assets/Seaborn-Icon--Streamline-Svg-Logos.svg';
 import tailwindIcon from '../assets/tailwind-svgrepo-com.svg'
 import tensorFlowIcon from '../assets/tensorflow-svgrepo-com.svg';
 import tsIcon from '../assets/typescript-icon-svgrepo-com.svg'
- 
+
 const Stack = () => {
     const [activeCategory, setActiveCategory] = useState('all');
 
@@ -41,7 +44,15 @@ const Stack = () => {
                 { name: "Java", icon: javaIcon },
                 { name: "PostgreSQL", icon: postgresIcon },
                 { name: "Redis", icon: redisIcon },
-                { name: "AWS", icon: awsIcon }
+            ]
+        },
+        {
+            id: 'infra',
+            category: "Infraestructura y CI/CD",
+            technologies: [
+                { name: "AWS", icon: awsIcon },
+                { name: "Docker", icon: dockerIcon },
+                { name: "GitHub Actions", icon: githubActionsIcon }
             ]
         },
         {
@@ -52,6 +63,7 @@ const Stack = () => {
                 { name: "PyTorch", icon: pytorchIcon },
                 { name: "Scikit-learn", icon: scikitLearnIcon },
                 { name: "LangChain ", icon: langChainIcon },
+                { name: "LangGraph", icon: langGraphIcon },
             ]
         },
         {
@@ -88,8 +100,9 @@ const Stack = () => {
     const categories = [
         { id: 'all', name: 'Todas' },
         { id: 'backend', name: 'Backend' },
-        { id: 'ai', name: 'AI & ML' },
+        { id: 'ai', name: 'AI y ML' },
         { id: 'data', name: 'Data' },
+        { id: 'infra', name: 'Infraestructura y CI/CD' },
         { id: 'frontend', name: 'Frontend' }
     ];
 
@@ -124,7 +137,7 @@ const Stack = () => {
                             <h3 className="text-2xl font-bold text-gray-900 mb-8">
                                 {stack.category}
                             </h3>
-                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                                 {stack.technologies.map((tech) => (
                                     <TechCard
                                         key={tech.name}
